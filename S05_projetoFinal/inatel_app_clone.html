@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>App Inatel Clone</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <button id="menu-toggle">&#9776;</button>
+
+    <div class="app-container">
+      <aside class="sidebar">
+        <img src="./images/inatel-logo.png" alt="Logo Inatel" class="logo-inatel" />
+        <nav>
+          <ul>
+            <li data-target="home">Início</li>
+            <li data-target="notas">Notas</li>
+            <li data-target="aulas">Aulas</li>
+            <li data-target="frequencia">Frequência</li>
+            <li data-target="eventos">Eventos</li>
+          </ul>
+        </nav>
+      </aside>
+
+      <main class="main-content">
+        <section id="home" class="page active">
+          <div class="carousel">
+            <div class="carousel-track">
+              <div class="carousel-slide">
+                <img src="./images/banner1.png" alt="Slide 1" />
+              </div>
+              <div class="carousel-slide">
+                <img src="./images/banner2.png" alt="Slide 2" />
+              </div>
+              <div class="carousel-slide">
+                <img src="./images/banner3.png" alt="Slide 3" />
+              </div>
+
+              <div class="carousel-slide">
+                <img src="./images/banner4.png" alt="Slide 5" />
+              </div>
+              <div class="carousel-slide">
+                <img src="./images/banner5.png" alt="Slide 5" />
+              </div>
+              <div class="carousel-slide">
+                <img src="./images/banner6.png" alt="Slide 6" />
+              </div>
+            </div>
+
+            <div class="carousel-indicators">
+              <span class="indicator active" data-slide="0"></span>
+              <span class="indicator" data-slide="1"></span>
+              <span class="indicator" data-slide="2"></span>
+              <span class="indicator" data-slide="3"></span>
+              <span class="indicator" data-slide="4"></span>
+              <span class="indicator" data-slide="5"></span>
+            </div>
+          </div>
+        </section>
+
+        <section id="notas" class="page">
+          <h1>Notas</h1>
+          <div class="card nota-card">
+            <h3>Matemática</h3>
+            <div class="nota-barra" style="width: 80%">Nota: 8.0</div>
+          </div>
+          <div class="card nota-card">
+            <h3>Física</h3>
+            <div class="nota-barra" style="width: 65%">Nota: 6.5</div>
+          </div>
+        </section>
+
+        <section id="aulas" class="page">
+          <h1>Aulas</h1>
+          <p>Em breve o cronograma estará disponível.</p>
+        </section>
+
+        <section id="frequencia" class="page">
+          <h1>Frequência</h1>
+          <div class="card frequencia-card">
+            <h3>Frequência Geral</h3>
+            <div class="frequencia-barra" style="width: 92%">92%</div>
+          </div>
+        </section>
+
+        <section id="eventos" class="page">
+          <h1>Próximos Eventos</h1>
+          <div class="card evento-card">
+            <h3>Hackathon Inatel 2025</h3>
+            <p>📅 25 de Junho · 🕘 9h às 18h</p>
+            <p>📍 Auditório A</p>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <button id="start-tutorial">Iniciar Tutorial</button>
+    <script src="script.js"></script>
+  </body>
+</html>
